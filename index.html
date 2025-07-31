@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLAN ROMBO </title>
+    <!-- agregar favicon -->
+
     <!-- SEO Básico -->
   <meta name="description" content="Concesionaria Renault en Rosario. Accedé a tu 0km con Plan Rombo: cuotas accesibles, sin interés, sin entrada.">
   <meta name="keywords" content="Renault Rosario, Plan Rombo, Renault 0km, autos en cuotas, concesionaria oficial, Renault Kwid, Logan, Sandero, Duster, Stepway, financiación Renault, autos baratos Rosario">
@@ -74,7 +76,7 @@
                     <a href="#inicio" class="text-gray-800 hover:text-yellow-500 font-medium">Inicio</a>
                     <a href="#catalogo" class="text-gray-800 hover:text-yellow-500 font-medium">Catálogo</a>
                     <a href="#contacto" class="text-gray-800 hover:text-yellow-500 font-medium">Contacto</a>
-                    <a href="#contacto" class="text-gray-800 hover:text-yellow-500 font-medium">Preguntas Frecuentes</a>
+                    <a href="#faq" class="text-gray-800 hover:text-yellow500 font-medium">Preguntas Frecuentes</a>
                 </div>
                 <div class="md:hidden">
                     <button class="text-gray-800 focus:outline-none" id="menu-btn">
@@ -119,7 +121,7 @@
           <img src="kwid.jpg" alt="Renault Kwid" class="w-full h-48 object-cover mb-4 rounded-md">
           <h3 class="text-2xl font-semibold mb-4">Renault Kwid</h3>
           <p class="text-gray-700">Compacto, ágil y económico, ideal para la ciudad.</p>
-          <button onclick="openModal('modalKwid')" class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded">Más info</button>
+          <a href="kwid-info.html" target="_blank" class="inline-block mt-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded">Más info</a>
         </div>
       </div>
 
@@ -129,7 +131,7 @@
           <img src="kardian.jpg" alt="Renault Kardian" class="w-full h-48 object-cover mb-4 rounded-md">
           <h3 class="text-2xl font-semibold mb-4">Renault Kardian</h3>
           <p class="text-gray-700">Espacioso y confiable, perfecto para la familia.</p>
-          <button onclick="openModal('modalLogan')" class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded">Más info</button>
+          <a href="kardian-info.html" target="_blank" class="inline-block mt-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded">Más info</a>
         </div>
       </div>
 
@@ -139,7 +141,7 @@
           <img src="kangoo2a.jpg" alt="Renault Kangoo 2A" class="w-full h-48 object-cover mb-4 rounded-md">
           <h3 class="text-2xl font-semibold mb-4">Renault Kangoo2A</h3>
           <p class="text-gray-700">Robusto y aventurero, listo para cualquier camino.</p>
-          <button onclick="openModal('modalDuster')" class="mt-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded">Más info</button>
+          <a href="kangoo2a-info.html" target="_blank" class="inline-block mt-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded">Más info</a>
         </div>
       </div>
 
@@ -166,162 +168,163 @@
                 </thead>
                 <tbody class="divide-y divide-gray-200">
                     <!-- Modelo 1 -->
-                    <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="kwid.jpg" alt="Miniatura Renault Kwid" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Kwid</span>
-                            </div>
-                        </td>
-                        <td class="py-4 px-6">1.0L SCe</td>
-                        <td class="py-4 px-6">Manual/Automático</td>
-                        <td class="py-4 px-6 font-bold">$210,900</td>
-                        <td class="py-4 px-6">
-                            <a href="kwid.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
-                        </td>
-                    </tr>
+                  <tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="kwid.jpg" alt="Miniatura Renault Kwid" class="h-16 w-24 object-cover mr-4 rounded" />
+                                    <span>Renault Kwid</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.0L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6 font-bold">$210,900</td>
+                            <td class="py-4 px-6">
+                                <a href="kwid-info.html" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
+                            </td>
+                        </tr>
 
                     <!-- Modelo 2 -->
                     <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="kardian.jpg" alt="Miniatura Renault Kardian" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Kardian</span>
-                            </div>
-                        </td>
-                        <td class="py-4 px-6">1.6L SCe</td>
-                        <td class="py-4 px-6">Manual/Automático</td>
-                        <td class="py-4 px-6 font-bold">$279,900</td>
-                        <td class="py-4 px-6">
-                            <a href="kardian.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
-                        </td>
-                    </tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="kardian.jpg" alt="Miniatura Renault Kardian" class="h-16 w-24 object-cover mr-4 rounded" />
+                                    <span>Renault Kardian</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.6L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6 font-bold">$279,900</td>
+                            <td class="py-4 px-6">
+                                <a href="kardian-info.html" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
+                            </td>
+                        </tr>
 
                     <!-- Modelo 3 -->
                     <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="sandero.jpg" alt="Miniatura Renault Sandero" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Sandero</span>
-                            </div>
-                        </td>
-                        <td class="py-4 px-6">2.0L SCe</td>
-                        <td class="py-4 px-6">Manual/Automático</td>
-                        <td class="py-4 px-6 font-bold">$389,900</td>
-                        <td class="py-4 px-6">
-                            <a href="duster.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
-                        </td>
-                    </tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="sandero.jpg" alt="Miniatura Renault Sandero" class="h-16 w-24 object-cover mr-4 rounded" />
+                                    <span>Renault Sandero</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">2.0L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6 font-bold">$389,900</td>
+                            <td class="py-4 px-6">
+                                <a href="sandero-info.html" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
+                            </td>
+                        </tr>
 
                     <!-- Modelo 4 -->
                     <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="kangoo2a.jpg" alt="Miniatura Renault Kangoo 2A" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Kangoo 2A</span>
-                            </div>
-                        </td>
-                        <td class="py-4 px-6">1.6L SCe</td>
-                        <td class="py-4 px-6">Manual/Automático</td>
-                        <td class="py-4 px-6 font-bold">$269,900</td>
-                        <td class="py-4 px-6">
-                            <a href="kangoo2A.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
-                        </td>
-                    </tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="kangoo2a.jpg" alt="Miniatura Renault Kangoo 2A" class="h-16 w-24 object-cover mr-4 rounded" />
+                                    <span>Renault Kangoo 2A</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.6L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6 font-bold">$269,900</td>
+                            <td class="py-4 px-6">
+                                <a href="kangoo2a-info.html" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
+                            </td>
+                        </tr>
 
                     <!-- Modelo 5 -->
-                    <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="stepway.jpg" alt="Miniatura Renault Stepway" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Stepway</span>
-                            </div>
-                        </td>
-                        <td class="py-4 px-6">1.6L SCe</td>
-                        <td class="py-4 px-6">Manual/Automático</td>
-                        <td class="py-4 px-6 font-bold">$329,900</td>
-                        <td class="py-4 px-6">
-                            <a href="stepway.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
-                        </td>
-                    </tr>
+                     <tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="stepway.jpg" alt="Miniatura Renault Stepway" class="h-16 w-24 object-cover mr-4 rounded" />
+                                    <span>Renault Stepway</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.6L SCe</td>
+                            <td class="py-4 px-6">Manual/Automático</td>
+                            <td class="py-4 px-6 font-bold">$329,900</td>
+                            <td class="py-4 px-6">
+                                <a href="stepway-info.html" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
+                            </td>
+                        </tr>
 
                     <!-- Modelo 6 -->
-                    <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="kangoo5A.jpg" alt="Miniatura Renault Kangoo 5A" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Kangoo 5A</span>
-                            </div>
-                        </td>
-                        <td class="py-4 px-6">1.6L SCe</td>
-                        <td class="py-4 px-6">Manual</td>
-                        <td class="py-4 px-6 font-bold">$289,900</td>
-                        <td class="py-4 px-6">
-                            <a href="kangoo5a.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
-                        </td>
-                    </tr>
+                     <tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="kangoo5A.jpg" alt="Miniatura Renault Kangoo 5A" class="h-16 w-24 object-cover mr-4 rounded" />
+                                    <span>Renault Kangoo 5A</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.6L SCe</td>
+                            <td class="py-4 px-6">Manual</td>
+                            <td class="py-4 px-6 font-bold">$289,900</td>
+                            <td class="py-4 px-6">
+                                <a href="kangoo5a-info.html" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
+                            </td>
+                        </tr>
+
 
                     <!-- Modelo 7 -->
                     <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="duster.jpg" alt="Miniatura Renault Duster" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Duster</span>
-                            </div>
-                        </td>
-                        <td class="py-4 px-6">1.3L Turbo</td>
-                        <td class="py-4 px-6">Automático</td>
-                        <td class="py-4 px-6 font-bold">$429,900</td>
-                        <td class="py-4 px-6">
-                            <a href="duster.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
-                        </td>
-                    </tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="duster.jpg" alt="Miniatura Renault Duster" class="h-16 w-24 object-cover mr-4 rounded" />
+                                    <span>Renault Duster</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.3L Turbo</td>
+                            <td class="py-4 px-6">Automático</td>
+                            <td class="py-4 px-6 font-bold">$429,900</td>
+                            <td class="py-4 px-6">
+                                <a href="duster-info.html" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
+                            </td>
+                        </tr>
 
                     <!-- Modelo 8 -->
                     <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="arkana.jpg" alt="Miniatura Renault Arkana" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Arkana</span>
-                            </div>
-                        </td>
-                        <td class="py-4 px-6">1.6L E-Tech</td>
-                        <td class="py-4 px-6">Automático</td>
-                        <td class="py-4 px-6 font-bold">$499,900</td>
-                        <td class="py-4 px-6">
-                            <a href="arkana.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
-                        </td>
-                    </tr>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="arkana.jpg" alt="Miniatura Renault Arkana" class="h-16 w-24 object-cover mr-4 rounded" />
+                                    <span>Renault Arkana</span>
+                                </div>
+                            </td>
+                            <td class="py-4 px-6">1.6L E-Tech</td>
+                            <td class="py-4 px-6">Automático</td>
+                            <td class="py-4 px-6 font-bold">$499,900</td>
+                            <td class="py-4 px-6">
+                                <a href="arkana-info.html" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
+                            </td>
+                        </tr>
 
                     <!-- Modelo 9 -->
                     <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="master.jpg" alt="Miniatura Renault Master" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Master</span>
-                            </div>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="master.jpg" alt="Miniatura Renault Master" class="h-16 w-24 object-cover mr-4 rounded" />
+                                    <span>Renault Master</span>
+                                </div>
                         </td>
                         <td class="py-4 px-6">2.3L Diesel</td>
                         <td class="py-4 px-6">Manual</td>
                         <td class="py-4 px-6 font-bold">$579,900</td>
                         <td class="py-4 px-6">
-                            <a href="master.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
+                            <a href="master-info.html" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
                         </td>
                     </tr>
 
                     <!-- Modelo 10 -->
                     <tr>
-                        <td class="py-4 px-6">
-                            <div class="flex items-center">
-                                <img src="oroch.jpg" alt="Miniatura Renault Oroch" class="h-10 w-16 object-cover mr-4 rounded">
-                                <span>Renault Oroch</span>
+                            <td class="py-4 px-6">
+                                <div class="flex items-center">
+                                    <img src="oroch.jpg" alt="Miniatura Renault Oroch" class="h-16 w-24 object-cover mr-4 rounded">
+                                    <span>Renault Oroch</span>
                             </div>
                         </td>
                         <td class="py-4 px-6">1.6L SCe</td>
                         <td class="py-4 px-6">Manual/Automático</td>
                         <td class="py-4 px-6 font-bold">$369,900</td>
                         <td class="py-4 px-6">
-                            <a href="oroch.html" class="text-yellow-500 hover:text-yellow-600 font-medium">Más info</a>
+                            <a href="oroch-info.html" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-2 px-4 rounded inline-block">Más info</a>
                         </td>
                     </tr>
 
@@ -405,6 +408,48 @@ Gracias por estar acá. Si necesitás algo, escribime tranquilo. Estoy para ayud
         </div>
     </section>
 
+    <!-- Sección Preguntas Frecuentes -->
+<section id="faq" class="py-20 bg-gray-100">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Preguntas Frecuentes</h2>
+
+    <div class="space-y-4">
+      <!-- Pregunta 1 -->
+      <details class="group bg-white p-6 rounded-lg shadow-md transition duration-300 hover:shadow-lg cursor-pointer">
+        <summary class="flex items-center justify-between text-lg font-semibold text-gray-800">
+          <span>¿Cómo puedo financiar un auto?</span>
+          <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180 text-yellow-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <p class="mt-4 text-gray-700">Podés acceder a planes de ahorro con cuotas accesibles, sin interés y con adjudicación asegurada. ¡Consultanos para más info!</p>
+      </details>
+
+      <!-- Pregunta 2 -->
+      <details class="group bg-white p-6 rounded-lg shadow-md transition duration-300 hover:shadow-lg cursor-pointer">
+        <summary class="flex items-center justify-between text-lg font-semibold text-gray-800">
+          <span>¿Qué documentación necesito?</span>
+          <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180 text-yellow-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <p class="mt-4 text-gray-700">Solo tu DNI y un comprobante de ingresos. Nosotros te guiamos en todo el proceso para que sea rápido y fácil.</p>
+      </details>
+
+      <!-- Pregunta 3 -->
+      <details class="group bg-white p-6 rounded-lg shadow-md transition duration-300 hover:shadow-lg cursor-pointer">
+        <summary class="flex items-center justify-between text-lg font-semibold text-gray-800">
+          <span>¿Puedo cambiar de modelo una vez iniciado el plan?</span>
+          <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180 text-yellow-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <p class="mt-4 text-gray-700">Sí, podés cambiar de modelo siempre que cumplas ciertos requisitos. Te ayudamos a hacer el cambio sin complicaciones.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
     <!-- WhatsApp Button -->
     <button class="fixed bottom-6 right-6">
   <a
@@ -479,4 +524,5 @@ Gracias por estar acá. Si necesitás algo, escribime tranquilo. Estoy para ayud
         });
     </script>
 </body>
+</script>
 </html>

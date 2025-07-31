@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renault Kwid - Catálogo</title>
+  <link rel="icon" href="favicon.ico" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lightbox2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+  <!-- Swiper.js (carrusel) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Menú -->
+  <header class="bg-yellow-400 p-4 shadow-md fixed top-0 w-full z-50">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto">
+      <h1 class="font-bold text-xl">Renault Kwid</h1>
+      <ul class="flex gap-4 text-sm font-semibold">
+        <li><a href="#galeria" class="hover:underline">Galería</a></li>
+        <li><a href="#diseno" class="hover:underline">Diseño</a></li>
+        <li><a href="#tecnologia" class="hover:underline">Tecnología</a></li>
+        <li><a href="#interior" class="hover:underline">Interior</a></li>
+        <li><a href="#seguridad" class="hover:underline">Seguridad</a></li>
+        <li><a href="#equipamiento" class="hover:underline">Equipamiento</a></li>
+        <li><a href="#motor" class="hover:underline">Motor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-24 max-w-6xl mx-auto px-4 space-y-16">
+
+    <!-- Carrusel destacado (ahora arriba) -->
+    <section id="slider">
+      <h2 class="text-3xl font-bold mb-4">Vista Destacada</h2>
+      <div class="swiper mySwiper rounded-lg shadow-lg">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/kwid1.jpg" alt="Vista 1" class="w-full h-64 object-cover rounded-lg" /></div>
+          <div class="swiper-slide"><img src="img/kwid2.jpg" alt="Vista 2" class="w-full h-64 object-cover rounded-lg" /></div>
+          <!-- Agregá más slides si querés -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Galería (también arriba) -->
+    <section id="galeria">
+      <h2 class="text-3xl font-bold mb-4">Galería</h2>
+      <p>Imágenes del Renault Kwid. Pasá el mouse para ver detalles o hacé clic para ampliarlas.</p>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-4" id="galeria-autos">
+        <a href="img/kwid1.jpg" data-lightbox="galeria" data-title="Renault Kwid frontal">
+          <div class="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="img/kwid1.jpg" alt="Renault Kwid frontal" class="w-full h-auto object-cover" />
+          </div>
+        </a>
+        <a href="img/kwid2.jpg" data-lightbox="galeria" data-title="Interior del Kwid">
+          <div class="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <img src="img/kwid2.jpg" alt="Interior del Kwid" class="w-full h-auto object-cover" />
+          </div>
+        </a>
+        <!-- Agregá más imágenes manualmente acá -->
+      </div>
+    </section>
+
+    <!-- Secciones informativas -->
+    <section id="diseno">
+      <h2 class="text-3xl font-bold mb-4">Diseño</h2>
+      <p>Parrilla frontal cromada, badge “Iconic”, detalles laterales únicos y llantas de aleación de 14”. Disponible en gris Cassiopée con detalles en amarillo Citron.</p>
+    </section>
+
+    <section id="tecnologia">
+      <h2 class="text-3xl font-bold mb-4">Tecnología</h2>
+      <p>Sistema multimedia de 8", panel digital, Android Auto™ y Apple Car Play™. Todo al alcance de tu mano.</p>
+    </section>
+
+    <section id="interior">
+      <h2 class="text-3xl font-bold mb-4">Interior</h2>
+      <p>Capacidad para 5 pasajeros, baúl de 290L ampliable a 1100L con asientos traseros rebatidos.</p>
+    </section>
+
+    <section id="seguridad">
+      <h2 class="text-3xl font-bold mb-4">Seguridad</h2>
+      <ul class="list-disc list-inside">
+        <li>4 airbags</li>
+        <li>ESP, ABS + AFU</li>
+        <li>Cámara trasera</li>
+        <li>Control de tracción y presión de neumáticos</li>
+      </ul>
+    </section>
+
+    <section id="equipamiento">
+      <h2 class="text-3xl font-bold mb-4">Equipamiento</h2>
+      <p>Incluye luces LED, dirección eléctrica, control de arranque en pendiente, y sistema multimedia completo. Versiones Iconic y Outsider.</p>
+    </section>
+
+    <section id="motor">
+      <h2 class="text-3xl font-bold mb-4">Motor</h2>
+      <p>Motor 1.0L 3 cilindros, 66 CV, caja manual de 5 marchas, consumo mixto 15,5 km/l. Ideal para la ciudad.</p>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center p-4 mt-20">
+    <p>&copy; 2025 Renault Argentina - Catálogo informativo</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Swiper init
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 3000 },
+      pagination: { el: ".swiper-pagination" },
+    });
+  </script>
+</body>
+</html>
+
