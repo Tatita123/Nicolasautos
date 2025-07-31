@@ -3,122 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Renault Kwid - Catálogo</title>
+  <title>Renault Kwid - Detalles</title>
   <link rel="icon" href="favicon.ico" />
-  <!-- Tailwind CSS -->
+  <meta name="description" content="Detalles del Renault Kwid - compacto, ágil y económico. Galería, especificaciones y más." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lightbox2 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  <!-- Swiper.js (carrusel) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .main-image {
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+    }
+  </style>
 </head>
-
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- Menú -->
-  <header class="bg-yellow-400 p-4 shadow-md fixed top-0 w-full z-50">
-    <nav class="flex justify-between items-center max-w-6xl mx-auto">
-      <h1 class="font-bold text-xl">Renault Kwid</h1>
-      <ul class="flex gap-4 text-sm font-semibold">
-        <li><a href="#galeria" class="hover:underline">Galería</a></li>
-        <li><a href="#diseno" class="hover:underline">Diseño</a></li>
-        <li><a href="#tecnologia" class="hover:underline">Tecnología</a></li>
-        <li><a href="#interior" class="hover:underline">Interior</a></li>
-        <li><a href="#seguridad" class="hover:underline">Seguridad</a></li>
-        <li><a href="#equipamiento" class="hover:underline">Equipamiento</a></li>
-        <li><a href="#motor" class="hover:underline">Motor</a></li>
-      </ul>
-    </nav>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Renault_2021.svg" class="h-10" alt="Logo Renault" />
+        <h1 class="text-xl font-bold">Renault Kwid</h1>
+      </div>
+      <a href="index.html" class="text-yellow-500 hover:text-yellow-600 font-semibold">← Volver al inicio</a>
+    </div>
   </header>
 
-  <main class="pt-24 max-w-6xl mx-auto px-4 space-y-16">
+  <!-- Imagen Principal -->
+  <section class="main-image" style="background-image: url('kwid-02.jpg');">
+    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+      <h2 class="text-white text-4xl md:text-5xl font-bold">Renault Kwid</h2>
+    </div>
+  </section>
 
-    <!-- Carrusel destacado (ahora arriba) -->
-    <section id="slider">
-      <h2 class="text-3xl font-bold mb-4">Vista Destacada</h2>
-      <div class="swiper mySwiper rounded-lg shadow-lg">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/kwid1.jpg" alt="Vista 1" class="w-full h-64 object-cover rounded-lg" /></div>
-          <div class="swiper-slide"><img src="img/kwid2.jpg" alt="Vista 2" class="w-full h-64 object-cover rounded-lg" /></div>
-          <!-- Agregá más slides si querés -->
-        </div>
-        <div class="swiper-pagination"></div>
+  <!-- Descripción -->
+  <section class="py-12 px-4 max-w-5xl mx-auto">
+    <h3 class="text-2xl font-bold mb-4">Compacto, ágil y económico</h3>
+    <p class="text-gray-700 leading-relaxed mb-6">
+      El Renault Kwid combina diseño moderno, eficiencia y tecnología. Ideal para quienes buscan un auto urbano con bajo consumo, buena maniobrabilidad y seguridad destacada.
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-6">
+      <li>Motor 1.0L SCe</li>
+      <li>Transmisión manual o automática</li>
+      <li>Consumo urbano eficiente</li>
+      <li>Espacio interior inteligente</li>
+    </ul>
+  </section>
+
+  <!-- Galería de Imágenes -->
+  <section class="py-8 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6">Galería de fotos</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="kwid-01.jpg" alt="Renault Kwid frente" class="rounded shadow-md" />
+        <img src="kwid-04.jpg" alt="Renault Kwid lateral" class="rounded shadow-md" />
+        <img src="kwid-05.jpg" alt="Interior Renault Kwid" class="rounded shadow-md" />
+        <img src="kwid-06.jpg" alt="Renault Kwid trasera" class="rounded shadow-md" />
+        <img src="kwid-07.jpg" alt="agregar texto" class="rounded shadow-md" />
+        <img src="kwid-08.jpg" alt="agregar texto" class="rounded shadow-md" />
+        <img src="kwid-09.jpg" alt="agregar texto" class="rounded-md" />
+        <img src="kwid-10.jpg" alt="agregar texor" class="rounded-md" />
+        <img src="kwid-11.jpg" alt="agregar texto" class="rounded-md" />
+        <img src="kwid-12.jpg" alt="agregar texto" class="rounded-md" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Galería (también arriba) -->
-    <section id="galeria">
-      <h2 class="text-3xl font-bold mb-4">Galería</h2>
-      <p>Imágenes del Renault Kwid. Pasá el mouse para ver detalles o hacé clic para ampliarlas.</p>
+  <!-- CTA -->
+  <section class="py-12 bg-yellow-500 text-gray-900 text-center">
+    <h3 class="text-3xl font-bold mb-4">¿Querés más información?</h3>
+    <p class="mb-6">Consultá sin compromiso y conocé todas las opciones de financiación del Renault Kwid.</p>
+    <a href="https://wa.me/5493415059240?text=Hola%21%20Quiero%20info%20sobre%20el%20Renault%20Kwid" target="_blank" class="bg-white text-yellow-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100">Escribinos por WhatsApp</a>
+  </section>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-4" id="galeria-autos">
-        <a href="img/kwid1.jpg" data-lightbox="galeria" data-title="Renault Kwid frontal">
-          <div class="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-            <img src="img/kwid1.jpg" alt="Renault Kwid frontal" class="w-full h-auto object-cover" />
-          </div>
-        </a>
-        <a href="img/kwid2.jpg" data-lightbox="galeria" data-title="Interior del Kwid">
-          <div class="overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-            <img src="img/kwid2.jpg" alt="Interior del Kwid" class="w-full h-auto object-cover" />
-          </div>
-        </a>
-        <!-- Agregá más imágenes manualmente acá -->
-      </div>
-    </section>
-
-    <!-- Secciones informativas -->
-    <section id="diseno">
-      <h2 class="text-3xl font-bold mb-4">Diseño</h2>
-      <p>Parrilla frontal cromada, badge “Iconic”, detalles laterales únicos y llantas de aleación de 14”. Disponible en gris Cassiopée con detalles en amarillo Citron.</p>
-    </section>
-
-    <section id="tecnologia">
-      <h2 class="text-3xl font-bold mb-4">Tecnología</h2>
-      <p>Sistema multimedia de 8", panel digital, Android Auto™ y Apple Car Play™. Todo al alcance de tu mano.</p>
-    </section>
-
-    <section id="interior">
-      <h2 class="text-3xl font-bold mb-4">Interior</h2>
-      <p>Capacidad para 5 pasajeros, baúl de 290L ampliable a 1100L con asientos traseros rebatidos.</p>
-    </section>
-
-    <section id="seguridad">
-      <h2 class="text-3xl font-bold mb-4">Seguridad</h2>
-      <ul class="list-disc list-inside">
-        <li>4 airbags</li>
-        <li>ESP, ABS + AFU</li>
-        <li>Cámara trasera</li>
-        <li>Control de tracción y presión de neumáticos</li>
-      </ul>
-    </section>
-
-    <section id="equipamiento">
-      <h2 class="text-3xl font-bold mb-4">Equipamiento</h2>
-      <p>Incluye luces LED, dirección eléctrica, control de arranque en pendiente, y sistema multimedia completo. Versiones Iconic y Outsider.</p>
-    </section>
-
-    <section id="motor">
-      <h2 class="text-3xl font-bold mb-4">Motor</h2>
-      <p>Motor 1.0L 3 cilindros, 66 CV, caja manual de 5 marchas, consumo mixto 15,5 km/l. Ideal para la ciudad.</p>
-    </section>
-
-  </main>
-
-  <footer class="bg-gray-800 text-white text-center p-4 mt-20">
-    <p>&copy; 2025 Renault Argentina - Catálogo informativo</p>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p class="text-gray-400">© Renault Rosario | Nicolás Bonello</p>
   </footer>
-
-  <!-- Scripts -->
-  <script>
-    // Swiper init
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      autoplay: { delay: 3000 },
-      pagination: { el: ".swiper-pagination" },
-    });
-  </script>
 </body>
 </html>
-

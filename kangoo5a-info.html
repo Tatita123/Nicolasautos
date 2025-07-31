@@ -1,90 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Renault Kwid - Catálogo</title>
-  <link rel="icon" href="favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renault Kangoo 5A - Detalles</title>
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Detalles del Renault Kangoo 5A - Comodidad familiar con espíritu utilitario. Galería, especificaciones y contacto." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .main-image {
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- Menú -->
-  <header class="bg-yellow-400 p-4 shadow-md fixed top-0 w-full z-50">
-    <nav class="flex justify-between items-center max-w-6xl mx-auto">
-      <h1 class="font-bold text-xl">Renault Kwid</h1>
-      <ul class="flex gap-4 text-sm font-semibold">
-        <li><a href="#diseno" class="hover:underline">Diseño</a></li>
-        <li><a href="#tecnologia" class="hover:underline">Tecnología</a></li>
-        <li><a href="#interior" class="hover:underline">Interior</a></li>
-        <li><a href="#seguridad" class="hover:underline">Seguridad</a></li>
-        <li><a href="#equipamiento" class="hover:underline">Equipamiento</a></li>
-        <li><a href="#motor" class="hover:underline">Motor</a></li>
-        <li><a href="#galeria" class="hover:underline">Galería</a></li>
-      </ul>
-    </nav>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Renault_2021.svg" class="h-10" alt="Logo Renault" />
+        <h1 class="text-xl font-bold">Renault Kangoo 5A</h1>
+      </div>
+      <a href="index.html" class="text-yellow-500 hover:text-yellow-600 font-semibold">← Volver al inicio</a>
+    </div>
   </header>
 
-  <main class="pt-24 max-w-6xl mx-auto px-4 space-y-16">
+  <!-- Imagen Principal -->
+  <section class="main-image" style="background-image: url('kangoo5a-banner.jpg');">
+    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+      <h2 class="text-white text-4xl md:text-5xl font-bold">Renault Kangoo 5A</h2>
+    </div>
+  </section>
 
-        <!-- Sección Galería -->
-    <section id="galeria">
-      <h2 class="text-3xl font-bold mb-4">Galería</h2>
-      <p>Agregá acá tus imágenes del Renault Kwid:</p>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4" id="galeria-autos">
-        <!-- Ejemplo -->
-        <img src="img/kwid1.jpg" alt="Renault Kwid frontal" class="rounded shadow">
-        <img src="img/kwid2.jpg" alt="Interior del Kwid" class="rounded shadow">
-        <!-- Agregá más imágenes acá -->
+  <!-- Descripción -->
+  <section class="py-12 px-4 max-w-5xl mx-auto">
+    <h3 class="text-2xl font-bold mb-4">Espacio, seguridad y confort</h3>
+    <p class="text-gray-700 leading-relaxed mb-6">
+      El Renault Kangoo 5A es la opción perfecta para quienes buscan un vehículo familiar amplio sin renunciar a la practicidad y seguridad. Ideal para el uso diario o escapadas de fin de semana.
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-6">
+      <li>Motor 1.6 SCe con excelente autonomía</li>
+      <li>Capacidad para 5 pasajeros con gran baúl</li>
+      <li>Sistema Media Evolution con pantalla táctil</li>
+      <li>Ayudas a la conducción y múltiples airbags</li>
+    </ul>
+  </section>
+
+  <!-- Galería de Imágenes -->
+  <section class="py-8 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6">Galería de fotos</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="kangoo5a1.jpg" alt="Vista frontal Kangoo 5A" class="rounded shadow-md" />
+        <img src="kangoo5a2.jpg" alt="Interior Kangoo 5A" class="rounded shadow-md" />
+        <img src="kangoo5a3.jpg" alt="Baúl Kangoo 5A" class="rounded shadow-md" />
+        <img src="kangoo5a4.jpg" alt="Perfil Kangoo 5A" class="rounded shadow-md" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Sección Diseño -->
-    <section id="diseno">
-      <h2 class="text-3xl font-bold mb-4">Diseño</h2>
-      <p>Parrilla frontal cromada, badge “Iconic”, detalles laterales únicos y llantas de aleación de 14”. Disponible en gris Cassiopée con detalles en amarillo Citron.</p>
-    </section>
+  <!-- CTA -->
+  <section class="py-12 bg-yellow-500 text-gray-900 text-center">
+    <h3 class="text-3xl font-bold mb-4">¿Querés más información?</h3>
+    <p class="mb-6">Consultá disponibilidad, colores y planes de financiación para tu Kangoo 5A.</p>
+    <a href="https://wa.me/5493415059240?text=Hola%21%20Estoy%20interesado%20en%20el%20Renault%20Kangoo%205A" target="_blank" class="bg-white text-yellow-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100">Escribinos por WhatsApp</a>
+  </section>
 
-    <!-- Sección Tecnología -->
-    <section id="tecnologia">
-      <h2 class="text-3xl font-bold mb-4">Tecnología</h2>
-      <p>Incluye sistema multimedia de 8", panel digital, y compatibilidad con Android Auto™ y Apple Car Play™.</p>
-    </section>
-
-    <!-- Sección Interior -->
-    <section id="interior">
-      <h2 class="text-3xl font-bold mb-4">Interior</h2>
-      <p>Espacio para 5 personas, baúl de 290L ampliable a 1100L con asientos rebatidos. Ideal para ciudad.</p>
-    </section>
-
-    <!-- Sección Seguridad -->
-    <section id="seguridad">
-      <h2 class="text-3xl font-bold mb-4">Seguridad</h2>
-      <ul class="list-disc list-inside">
-        <li>4 airbags de serie</li>
-        <li>ESP, ABS + AFU</li>
-        <li>Cámara trasera y control de tracción</li>
-        <li>Alerta de presión de neumáticos</li>
-      </ul>
-    </section>
-
-    <!-- Sección Equipamiento -->
-    <section id="equipamiento">
-      <h2 class="text-3xl font-bold mb-4">Equipamiento</h2>
-      <p>Incluye aire acondicionado, espejos eléctricos, luces LED, multimedia con eco scoring y más. Dos versiones: Iconic y Outsider.</p>
-    </section>
-
-    <!-- Sección Motor -->
-    <section id="motor">
-      <h2 class="text-3xl font-bold mb-4">Motor</h2>
-      <p>Motor 1.0L de 3 cilindros, 66 CV, consumo mixto de 15,5 km/l, con caja manual de 5 velocidades y dirección eléctrica.</p>
-    </section>
-
-  </main>
-
-  <footer class="bg-gray-800 text-white text-center p-4 mt-20">
-    <p>&copy; 2025 Renault Argentina - Catálogo informativo sin fines comerciales</p>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p class="text-gray-400">© Renault Rosario | Nicolás Bonello</p>
   </footer>
-
 </body>
 </html>
